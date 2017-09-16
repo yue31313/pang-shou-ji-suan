@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, mainActivity!</string>
+    <string name="app_name">健康计算器</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="count">计算</string>
+    <string name="health">健康值:</string>
+    <string name="suggest">建议:</string>
+    <string name="prompt">只能输入数字或小数</string>
+</resources>

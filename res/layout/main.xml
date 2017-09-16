@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+ <TextView android:id="@+id/height"
+ 	android:text="@string/height"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:paddingTop="10dip"/>
+ 	
+ <TextView android:id="@+id/weight"
+ 	android:text="@string/weight"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/height"
+ 	android:paddingTop="35dip"/>
+
+ <EditText android:id="@+id/eheight"
+ 	android:layout_width="200dip"
+ 	android:numeric="decimal"
+ 	android:hint="@string/prompt"
+ 	android:layout_height="wrap_content"
+ 	android:layout_toRightOf="@id/height"/>
+ <EditText android:id="@+id/eweight"
+ 	android:layout_width="200dip"
+ 	android:numeric="decimal"
+ 	android:hint="@string/prompt"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/eheight"
+ 	android:layout_toRightOf="@id/weight"/>
+  <TextView android:text="cm"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_toRightOf="@id/eheight"
+ 	android:paddingTop="10dip"/>
+ <TextView android:text="kg"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_toRightOf="@id/eweight"
+ 	android:paddingTop="60dip"/>
+ <Button android:id="@+id/count"
+ 	android:text="@string/count"
+ 	android:layout_width="100dip"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/eweight"
+ 	android:layout_alignLeft="@id/eweight"/>
+ <TextView android:id="@+id/health"
+ 	android:text="@string/health"
+ 	android:paddingTop="10dip"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/count"/>
+ <TextView android:id="@+id/suggest"
+ 	android:text="@string/suggest"
+ 	android:paddingTop="15dip"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/health"/>
+ <TextView android:id="@+id/ehealth"
+ 	android:paddingTop="10dip"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/count"
+ 	android:layout_toRightOf="@id/health"/>
+ <TextView android:id="@+id/esuggest"
+ 	android:paddingTop="15dip"
+ 	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@id/ehealth"
+ 	android:layout_toRightOf="@id/suggest"/>
+ </RelativeLayout>
